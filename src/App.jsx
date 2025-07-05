@@ -103,9 +103,10 @@ function App() {
               <span className="edu-value">4.0 Equvilant</span>
             </div>
             <div className="edu-item">
-              <span className="edu-label">Average Grade:</span>
-              <span className="edu-value">First Class Honours</span>
-              <span className="edu-value">4.0 Equvilant</span>
+              <span className="edu-label">Capstone Project</span>
+              <span className="edu-value">
+                Reinforcement Learning for the Optimization of Public Transit
+              </span>
             </div>
           </div>
         </Widget>
