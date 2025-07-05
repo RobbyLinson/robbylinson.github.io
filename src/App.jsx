@@ -35,7 +35,7 @@ function App() {
             >
               <FaLinkedin />
             </a>
-            <a href="mailto:RobbyLinson@gmail.com" aria-label="Email">
+            <a href="mailto:me@robbylinson.dev" aria-label="Email">
               <FaEnvelope />
             </a>
           </div>
@@ -56,10 +56,10 @@ function App() {
               making an impact.
             </li>
             <li>
-              I have experience in Data Science, Research and Software
+              I have experience in Data Science, Research, and Software
               Development.
             </li>
-            <li>I will complete an M.Sc in Computer Science in May 2026.</li>
+            <li>I will complete an M.Sc. in Computer Science in May 2026.</li>
           </ul>
         </Widget>
 
@@ -98,8 +98,14 @@ function App() {
               <span className="edu-value">B.A. in Computer Science</span>
             </div>
             <div className="edu-item">
-              <span className="edu-label">Grade:</span>
+              <span className="edu-label">Average Grade:</span>
               <span className="edu-value">First Class Honours</span>
+              <span className="edu-value">4.0 Equvilant</span>
+            </div>
+            <div className="edu-item">
+              <span className="edu-label">Average Grade:</span>
+              <span className="edu-value">First Class Honours</span>
+              <span className="edu-value">4.0 Equvilant</span>
             </div>
           </div>
         </Widget>
