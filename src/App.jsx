@@ -117,7 +117,7 @@ const jobs = [
     location: 'Dublin, Ireland',
     period: 'Aug 2025 – Current',
     description:
-      'Working part-time on creating an MVP for a new startup. Focussing usability and rapid development.',
+      'Working part-time on creating an MVP for a new startup. Focusing usability and rapid development.',
     techStack: 'React, SQL, Express.js',
   },
   {
@@ -233,7 +233,7 @@ function App() {
             <div className="edu-item">
               <span className="edu-label">Average Grade:</span>
               <span className="edu-value">First Class Honours</span>
-              <span className="edu-value">4.0 Equvilant</span>
+              <span className="edu-value">4.0 Equivilant</span>
             </div>
             <div className="edu-item">
               <span className="edu-label">Capstone Project</span>
