@@ -1,0 +1,47 @@
+/* Styles for the experience section */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #232323;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 8px;
+}
+
+.experience-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 600px) {
+  .experience-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+  .experience-meta {
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 12px;
+  }
+}

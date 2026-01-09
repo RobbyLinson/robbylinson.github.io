@@ -1,10 +1,143 @@
 import React from 'react';
 import './index.css';
+import './components/Projects.css';
+import './components/Experience.css';
 import Widget from './components/Widget';
 import TechStack from './components/TechStack';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Robby from './assets/Robby.png';
 import TCD from './assets/TCD-Logo.png';
+import Neutralize from './assets/neutralize.png';
+import CloudBuilder from './assets/cloudbuilder.png';
+
+// ProjectCard component for easier project rendering
+function ProjectCard({
+  title,
+  role,
+  description,
+  techStack,
+  awards,
+  image,
+  alt,
+}) {
+  return (
+    <div className="project-item">
+      <div className="project-details">
+        <h2>{title}</h2>
+        <p>
+          <b>Role:</b> {role}
+        </p>
+        <p>
+          <b>Description:</b> {description}
+        </p>
+        <p>
+          <b>Tech Stack:</b> {techStack}
+        </p>
+        {awards && awards.trim() !== '' && (
+          <p>
+            <b>Awards:</b> {awards}
+          </p>
+        )}
+      </div>
+      <img className="project-image" src={image} alt={alt} />
+    </div>
+  );
+}
+
+// Array of project data
+const projects = [
+  {
+    title: 'Neutralize',
+    role: 'Team Lead',
+    description:
+      'A machine learning powered Chrome extension for bias analysis in articles',
+    techStack: 'Javascript, Python, HuggingFace API',
+    awards: 'Second Place in Hack Ireland 2025',
+    image: Neutralize,
+    alt: 'Neutralize project screenshot',
+  },
+  {
+    title: 'Cloud Builder',
+    role: 'Project Manager',
+    description:
+      'A "instructure as code tool" for automating cloud infrastructure setup.',
+    techStack: 'Javascript, Node.js, AWS',
+    awards: 'Finalist in SwEng Industry Awards 2024',
+    image: CloudBuilder,
+    alt: 'Cloud Builder project screenshot',
+  },
+  {
+    title: 'Perssonal Website',
+    role: 'Lead Developer',
+    description:
+      "You're viewing it! A personal portfolio website to showcase my skills and projects.",
+    techStack: 'Javascript, React, CSS',
+    image: Robby,
+    alt: 'Personal Website project screenshot',
+  },
+];
+
+function ExperienceCard({
+  title,
+  company,
+  location,
+  period,
+  description,
+  techStack,
+}) {
+  return (
+    <div className="experience-card">
+      <div className="experience-details">
+        <h2>{title}</h2>
+        <p>
+          <b>Company:</b> {company}
+        </p>
+        <p>
+          <b>Description:</b> {description}
+        </p>
+        {techStack && techStack.trim() !== '' && (
+          <p>
+            <b>Tech Stack:</b> {techStack}
+          </p>
+        )}
+      </div>
+      <div className="experience-meta">
+        <div>{location}</div>
+        <div>{period}</div>
+      </div>
+    </div>
+  );
+}
+
+// Array of job experience data
+const jobs = [
+  {
+    title: 'Founding Engineer',
+    company: 'Zane',
+    location: 'Dublin, Ireland',
+    period: 'Aug 2025 – Current',
+    description:
+      'Worked part-time on creating an MVP for a new startup. Focussed on usability and rapid development.',
+    techStack: 'React, SQL, Express.js',
+  },
+  {
+    title: 'Full-time Data Science Intern',
+    company: 'Eaton',
+    location: 'Dublin, Ireland',
+    period: 'January 2025 – September 2025',
+    description:
+      'Developed and tested machine learning models for industrial applications. Presented results to stakeholders for project validation. Created proprietary data visualization tools.',
+    techStack: 'Python, TensorFlow, Pandas',
+  },
+  {
+    title: 'ContractedResearch Assistant',
+    company: 'Jobs For the Future',
+    location: 'Remote',
+    period: 'June 2024 – September 2024',
+    description:
+      'Researched AI job and course search tools to analyze their ethical implications and understand bias in AI tools.',
+  },
+];
 
 function App() {
   return (
@@ -122,33 +255,37 @@ function App() {
           <TechStack />
         </Widget>
 
-        {/* Projects */}
-        <Widget widthUnits={1} heightUnits={0.1} row={3} col={1}>
-          <h1>Projects</h1>
-        </Widget>
-
-        {/* <Widget
+        {/* Experience Section */}
+        <Widget
           widthUnits={1}
           heightUnits={0.1}
           row={3}
-          col={7}
+          col={1}
+          className="experience-widget"
+        >
+          <h1>Experience</h1>
+          <div className="experience-list">
+            {jobs.map((job, idx) => (
+              <ExperienceCard key={idx} {...job} />
+            ))}
+          </div>
+        </Widget>
+
+        {/* Projects Section */}
+        <Widget
+          widthUnits={1}
+          heightUnits={0.1}
+          row={4}
+          col={1}
           className="projects-widget"
         >
-          <h2>Projects</h2>
+          <h1>Projects</h1>
           <div className="projects-list">
-            <div className="project-item">
-              <h3>Personal Website</h3>
-              <p>
-                A responsive personal portfolio built with React and a custom
-                widget system.
-              </p>
-            </div>
-            <div className="project-item">
-              <h3>Project 2</h3>
-              <p>Description of another impressive project you've worked on.</p>
-            </div>
+            {projects.map((project, idx) => (
+              <ProjectCard key={idx} {...project} />
+            ))}
           </div>
-        </Widget> */}
+        </Widget>
       </div>
     </div>
   );
