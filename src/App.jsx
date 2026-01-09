@@ -117,7 +117,7 @@ const jobs = [
     location: 'Dublin, Ireland',
     period: 'Aug 2025 – Current',
     description:
-      'Worked part-time on creating an MVP for a new startup. Focussed on usability and rapid development.',
+      'Working part-time on creating an MVP for a new startup. Focussing usability and rapid development.',
     techStack: 'React, SQL, Express.js',
   },
   {
@@ -192,7 +192,7 @@ function App() {
               I have experience in Data Science, Research, and Software
               Development.
             </li>
-            <li>I will complete an M.Sc. in Computer Science in May 2026.</li>
+            <li>I will complete an M.Sc. in Computer Science by May 2026.</li>
           </ul>
         </Widget>
 
