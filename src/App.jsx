@@ -67,7 +67,7 @@ const projects = [
     alt: 'Cloud Builder project screenshot',
   },
   {
-    title: 'Perssonal Website',
+    title: 'Personal Website',
     role: 'Lead Developer',
     description:
       "You're viewing it! A personal portfolio website to showcase my skills and projects.",
