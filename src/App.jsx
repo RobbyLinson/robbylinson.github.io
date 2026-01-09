@@ -130,7 +130,7 @@ const jobs = [
     techStack: 'Python, TensorFlow, Pandas',
   },
   {
-    title: 'ContractedResearch Assistant',
+    title: 'Contracted Research Assistant',
     company: 'Jobs For the Future',
     location: 'Remote',
     period: 'June 2024 – September 2024',
