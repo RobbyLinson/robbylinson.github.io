@@ -1,273 +1,40 @@
-/* About Me Widget */
-.about-widget {
-  display: flex;
-  flex-direction: column;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.about-list {
-  list-style-type: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.about-list li {
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.about-list li::before {
-  content: '•';
-  color: var(--color-primary);
-  font-size: 1.25rem;
-  position: absolute;
-  left: 0;
-  top: -0.125rem;
-} /* src/index.css */
-:root {
-  --color-background: #121212;
-  --color-surface: #1e1e1e;
-  --color-primary: #b980ff;
-  --color-secondary: #80b3ff;
-  --color-text: #f0f0f0;
-  --color-text-secondary: #a0a0a0;
-  --color-border: #333333;
-  --font-main:
-    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  --font-code: 'JetBrains Mono', 'Fira Code', monospace;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: var(--color-background);
-  color: var(--color-text);
-  font-family: var(--font-main);
-  line-height: 1.6;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
-}
-
-h1,
-h2,
-h3 {
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-  color: var(--color-text);
-}
-
-h1 {
-  font-size: 2rem;
-  color: var(--color-primary);
-}
-
-h2 {
-  font-size: 1.5rem;
-  color: var(--color-primary);
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-a:hover {
-  color: var(--color-secondary);
-}
-
-/* Social Icons Widget */
-.social-widget {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: center;
-  width: 100%;
-  max-width: 300px;
-}
-
-.social-icons a {
-  font-size: 2rem;
-  color: var(--color-primary);
-  transition:
-    transform 0.2s,
-    color 0.2s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.1);
-  color: var(--color-secondary);
-}
-
-/* Profile Widget */
-.profile-widget {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.profile-picture {
-  width: 100%;
-  max-width: 320px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  transition: transform 0.3s;
-}
-
-.profile-picture:hover {
-  transform: scale(1.02);
-}
-
-/* Education Widget */
-.education-widget {
-  display: flex;
-  flex-direction: column;
-}
-
-.edu-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.college-logo {
-  width: 60px;
-  height: auto;
-}
-
-.edu-details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.edu-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.edu-label {
-  font-weight: bold;
-  color: var(--color-text-secondary);
-}
-
-.edu-value {
-  color: var(--color-text);
-}
-
-/* Projects Widget */
-.projects-widget {
-  display: flex;
-  flex-direction: column;
-}
-
-.projects-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.project-item {
-  padding: 0.5rem;
-  border-left: 2px solid var(--color-primary);
-  padding-left: 1rem;
-}
-
-.project-item h3 {
-  margin-bottom: 0.25rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .edu-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .college-logo {
-    width: 50px;
-  }
-
-  /* Adjust social icons for smaller screens */
-  .social-icons {
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 1rem;
-    max-width: 100%;
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 263 70% 75%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 91.2% 59.8%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 263 70% 75%;
+    --radius: 0.5rem;
   }
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.75rem;
+@layer base {
+  * {
+    @apply border-border;
   }
-
-  h2 {
-    font-size: 1.25rem;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-  }
-
-  .social-icons a {
-    font-size: 1.75rem;
-  }
-
-  .profile-picture {
-    max-width: 250px;
-  }
-
-  /* Keep all content centered on mobile */
-  .widget {
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .project-item {
-    border-left: none;
-    border-bottom: 2px solid var(--color-primary);
-    padding-left: 0;
-    padding-bottom: 0.5rem;
-  }
-
-  .edu-header {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .edu-item {
-    align-items: center;
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
   }
 }
