@@ -1,8 +1,19 @@
 import Neutralize from '../assets/neutralize.png';
 import CloudBuilder from '../assets/cloudbuilder.png';
 import Robby from '../assets/Robby.png';
+import TrinityWall from '../assets/Trinity Climbing Wall.jpg';
 
 export const projects = [
+  {
+    title: 'Trinity-Beta',
+    role: 'Solo Developer',
+    description:
+      'A web application for showcasing, rating and reviewing climbs at Trinity College Dublin',
+    techStack: 'JavaScript, Next.JS, Prisma, PostgreSQL',
+    image: TrinityWall,
+    alt: 'Trinity Climbing Wall',
+    url: 'https://twall-beta.vercel.app/',
+  },
   {
     title: 'Neutralize',
     role: 'Team Lead',
