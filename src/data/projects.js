@@ -23,6 +23,7 @@ export const projects = [
     awards: 'Second Place in Hack Ireland 2025',
     image: Neutralize,
     alt: 'Neutralize project screenshot',
+    url: 'https://www.neutralise.net',
   },
   {
     title: 'Cloud Builder',
