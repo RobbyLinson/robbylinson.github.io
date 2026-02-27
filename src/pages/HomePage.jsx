@@ -92,7 +92,7 @@ function HomePage() {
         {/* Profile, Education, and Tech Stack Row */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Profile Picture */}
-          <Card className="md:col-span-3">
+          <Card className="md:col-span-3 flex items-center">
             <CardContent className="p-6">
               <img
                 src={Robby}
