@@ -6,7 +6,7 @@ export const jobs = [
     period: 'Aug 2025 – Current',
     description:
       'Working part-time on creating an MVP for a new startup. Focusing usability and rapid development.',
-    techStack: 'React, SQL, Express.js',
+    techStack: 'React, TailwindCSS, Vite, PostgreSQL, Express.js',
   },
   {
     title: 'Full-time Data Science Intern',

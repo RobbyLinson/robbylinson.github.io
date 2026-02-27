@@ -2,14 +2,24 @@ import Neutralize from '../assets/neutralize.png';
 import CloudBuilder from '../assets/cloudbuilder.png';
 import Robby from '../assets/Robby.png';
 import TrinityWall from '../assets/Trinity Climbing Wall.jpg';
+import Rolodex from '../assets/rolodex-logo.png';
 
 export const projects = [
+  {
+    title: 'Rolodex',
+    role: 'Backend Developer',
+    description: 'An agentic CRM system for keeping your contacts up to date',
+    techStack:
+      'JavaScript, Python, Vite, Supabase, Claude, Langfuse, PostgreSQL',
+    image: Rolodex,
+    alt: 'Rolodex',
+  },
   {
     title: 'Trinity-Beta',
     role: 'Solo Developer',
     description:
       'A web application for showcasing, rating and reviewing climbs at Trinity College Dublin',
-    techStack: 'JavaScript, Next.JS, Prisma, PostgreSQL',
+    techStack: 'JavaScript, Next.JS, Prisma, PostgreSQL, TailwindCSS',
     image: TrinityWall,
     alt: 'Trinity Climbing Wall',
     url: 'https://twall-beta.vercel.app/',
