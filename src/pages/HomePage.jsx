@@ -13,8 +13,10 @@ import Robby from '../assets/Robby.png';
 import TCD from '../assets/TCD-Logo.png';
 import { projects } from '../data/projects';
 import { jobs } from '../data/jobs';
+import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="max-w-7xl mx-auto space-y-6">
@@ -57,7 +59,15 @@ function HomePage() {
           <Card className="md:col-span-11">
             <CardHeader>
               <CardTitle className="text-4xl text-primary">
-                Robby Linson
+                <div className="flex w-full items-center justify-between">
+                  <span>Robby Linson</span>
+                  <button
+                    className="text-sm text-primary bg-primary/15 px-4 py-1 rounded-full"
+                    onClick={() => navigate('/well-rounded')}
+                  >
+                    Well Rounded
+                  </button>
+                </div>
               </CardTitle>
               <h2 className="text-2xl text-primary mt-2">About Me</h2>
             </CardHeader>
@@ -66,22 +76,22 @@ function HomePage() {
                 <li className="flex items-start">
                   <span className="text-primary text-xl mr-3">•</span>
                   <span>
-                    I am a Computer Science student passionate about working
-                    hard and making an impact.
+                    Computer Science student passionate about working hard and
+                    making an impact.
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary text-xl mr-3">•</span>
                   <span>
-                    I have experience in Data Science, Machine Learning,
-                    Research, and Software Development.
+                    Experienced in Data Science, Machine Learning, Research, and
+                    Software Development.
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary text-xl mr-3">•</span>
                   <span>
-                    I will complete an M.Sc. in Computer Science by May 2026 and
-                    am seeking full-time opportunities.
+                    Completing an M.Sc. in Computer Science by May 2026 and
+                    seeking full-time opportunities.
                   </span>
                 </li>
               </ul>
