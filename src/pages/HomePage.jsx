@@ -133,8 +133,8 @@ function HomePage() {
                     Capstone Project:
                   </p>
                   <p>
-                    Validation of Reinforcement Learning for the Optimization of
-                    Dublin Bus
+                    Reinforcement Learning for Bus Headway Regularity
+                    Optimisation: A SUMO-Based Study of Dublin Bus
                   </p>
                 </div>
               </div>
