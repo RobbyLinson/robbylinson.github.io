@@ -80,7 +80,8 @@ function HomePage() {
                 <li className="flex items-start">
                   <span className="text-primary text-xl mr-3">•</span>
                   <span>
-                    I will complete an M.Sc. in Computer Science by May 2026.
+                    I will complete an M.Sc. in Computer Science by May 2026 and
+                    am seeking full-time opportunities.
                   </span>
                 </li>
               </ul>
