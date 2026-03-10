@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from '../components/ui/card';
 import TechStack from '../components/TechStack';
-import ProjectCard from '../components/ProjectCard';
+import ProjectCarousel from '../components/ProjectCarousel';
 import ExperienceCard from '../components/ExperienceCard';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Robby from '../assets/Robby.png';
@@ -183,11 +183,7 @@ function HomePage() {
             <CardTitle className="text-3xl text-primary">Projects</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="space-y-6">
-              {projects.map((project, idx) => (
-                <ProjectCard key={idx} {...project} />
-              ))}
-            </div>
+            <ProjectCarousel projects={projects} />
           </CardContent>
         </Card>
       </div>
