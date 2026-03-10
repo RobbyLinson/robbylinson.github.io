@@ -8,7 +8,7 @@ import {
 import TechStack from '../components/TechStack';
 import ProjectCarousel from '../components/ProjectCarousel';
 import ExperienceCard from '../components/ExperienceCard';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa';
 import Robby from '../assets/Robby.png';
 import TCD from '../assets/TCD-Logo.png';
 import { projects } from '../data/projects';
@@ -173,6 +173,32 @@ function HomePage() {
               {jobs.map((job, idx) => (
                 <ExperienceCard key={idx} {...job} />
               ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Tools Section */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-3xl text-primary">Tools</CardTitle>
+            <p className="text-muted-foreground text-sm mt-1">
+              Free, local, ad-free utilities that run entirely in your browser.
+            </p>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <button
+                onClick={() => navigate('/tools/pdf-combiner')}
+                className="group flex flex-col items-center gap-3 p-6 rounded-lg border border-border hover:border-primary/50 hover:bg-accent/50 transition-all text-left"
+              >
+                <FaFilePdf className="text-4xl text-primary group-hover:scale-110 transition-transform" />
+                <div className="text-center">
+                  <p className="font-semibold text-lg">PDF Combiner</p>
+                  <p className="text-sm text-muted-foreground">
+                    Merge multiple PDFs into one
+                  </p>
+                </div>
+              </button>
             </div>
           </CardContent>
         </Card>

@@ -5,7 +5,7 @@ export const jobs = [
     location: 'Dublin, Ireland',
     period: 'Aug 2025 – Current',
     description:
-      'Working part-time on creating an MVP for a new startup. Focusing usability and rapid development.',
+      'Working part-time on creating an MVP for a new startup. Focusing on usability and rapid development.',
     techStack: 'React, TailwindCSS, Vite, PostgreSQL, Express.js',
   },
   {
