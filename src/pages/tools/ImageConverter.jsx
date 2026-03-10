@@ -162,8 +162,7 @@ function ImageConverter() {
               </button>
             </div>
             <p className="text-muted-foreground mt-2">
-              Convert between PNG, JPG, and WebP. Everything runs locally in
-              your browser — no uploads, no ads, no tracking.
+              Convert between PNG, JPG, and WebP.
             </p>
           </CardHeader>
         </Card>

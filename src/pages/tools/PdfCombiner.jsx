@@ -141,8 +141,7 @@ function PdfCombiner() {
               </button>
             </div>
             <p className="text-muted-foreground mt-2">
-              Combine multiple PDFs into one. Everything ad free runs on your
-              browser.
+              Combine multiple PDFs into one.
             </p>
           </CardHeader>
         </Card>

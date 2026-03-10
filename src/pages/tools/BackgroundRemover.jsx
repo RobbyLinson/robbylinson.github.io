@@ -129,12 +129,11 @@ function BackgroundRemover() {
               </button>
             </div>
             <p className="text-muted-foreground mt-2">
-              Remove backgrounds from images using AI. Everything runs locally
-              in your browser — no uploads, no ads, no tracking.
+              Remove backgrounds from images using AI.
             </p>
             <p className="text-muted-foreground text-xs mt-1">
               The AI model (~40 MB) downloads once on first use and is cached by
-              your browser.
+              your browser for subsequent use.
             </p>
           </CardHeader>
         </Card>
