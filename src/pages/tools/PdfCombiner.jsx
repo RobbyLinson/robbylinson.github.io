@@ -6,7 +6,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from '../components/ui/card';
+} from '../../components/ui/card';
 import { FaFilePdf, FaTrash, FaArrowUp, FaArrowDown } from 'react-icons/fa';
 
 function PdfCombiner() {

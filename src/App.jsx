@@ -2,9 +2,9 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import WellRounded from './pages/WellRounded';
-import PdfCombiner from './pages/PdfCombiner';
-import ImageConverter from './pages/ImageConverter';
-import BackgroundRemover from './pages/BackgroundRemover';
+import PdfCombiner from './pages/tools/PdfCombiner';
+import ImageConverter from './pages/tools/ImageConverter';
+import BackgroundRemover from './pages/tools/BackgroundRemover';
 
 function App() {
   return (

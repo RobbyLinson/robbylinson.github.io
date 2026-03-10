@@ -6,7 +6,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from '../components/ui/card';
+} from '../../components/ui/card';
 import { FaImage, FaTrash, FaDownload } from 'react-icons/fa';
 
 const ACCEPT = 'image/png,image/jpeg,image/webp,.png,.jpg,.jpeg,.webp';
