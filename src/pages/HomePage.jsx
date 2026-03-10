@@ -8,7 +8,7 @@ import {
 import TechStack from '../components/TechStack';
 import ProjectCarousel from '../components/ProjectCarousel';
 import ExperienceCard from '../components/ExperienceCard';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf, FaImage } from 'react-icons/fa';
 import Robby from '../assets/Robby.png';
 import TCD from '../assets/TCD-Logo.png';
 import { projects } from '../data/projects';
@@ -196,6 +196,18 @@ function HomePage() {
                   <p className="font-semibold text-lg">PDF Combiner</p>
                   <p className="text-sm text-muted-foreground">
                     Merge multiple PDFs into one
+                  </p>
+                </div>
+              </button>
+              <button
+                onClick={() => navigate('/tools/image-converter')}
+                className="group flex flex-col items-center gap-3 p-6 rounded-lg border border-border hover:border-primary/50 hover:bg-accent/50 transition-all text-left"
+              >
+                <FaImage className="text-4xl text-primary group-hover:scale-110 transition-transform" />
+                <div className="text-center">
+                  <p className="font-semibold text-lg">Image Converter</p>
+                  <p className="text-sm text-muted-foreground">
+                    Convert between PNG, JPG, and WebP
                   </p>
                 </div>
               </button>
