@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaExternalLinkAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function ProjectCarousel({ projects }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -69,10 +70,10 @@ function ProjectCarousel({ projects }) {
 }
 
 function ProjectSlide({ project, active }) {
-  const { title, role, description, techStack, awards, image, alt, url } =
+  const { title, role, description, techStack, awards, image, alt, url, caseStudyUrl } =
     project;
 
-  const content = (
+  return (
     <div
       className={`grid grid-cols-1 md:grid-cols-3 gap-6 p-6 rounded-lg border border-primary/20 transition-all duration-300 ${
         active ? 'bg-accent/50 scale-100' : 'bg-card scale-95 opacity-60'
@@ -94,7 +95,33 @@ function ProjectSlide({ project, active }) {
             <b>Awards:</b> {awards}
           </p>
         )}
+
+        {/* Action links */}
+        {(url || caseStudyUrl) && (
+          <div className="flex flex-wrap gap-2 pt-1">
+            {url && (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-primary/15 text-primary hover:bg-primary/25 transition-colors"
+              >
+                <FaExternalLinkAlt className="text-[10px]" />
+                Live Site
+              </a>
+            )}
+            {caseStudyUrl && (
+              <Link
+                to={caseStudyUrl}
+                className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-secondary/20 text-foreground/80 hover:bg-secondary/30 transition-colors"
+              >
+                Case Study →
+              </Link>
+            )}
+          </div>
+        )}
       </div>
+
       <div className="flex items-center justify-center">
         <img
           className="w-48 h-48 object-cover rounded-lg shadow-lg"
@@ -104,15 +131,6 @@ function ProjectSlide({ project, active }) {
       </div>
     </div>
   );
-
-  if (url) {
-    return (
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        {content}
-      </a>
-    );
-  }
-  return content;
 }
 
 export default ProjectCarousel;

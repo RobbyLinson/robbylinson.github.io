@@ -34,6 +34,7 @@ export const projects = [
     image: Neutralize,
     alt: 'Neutralize project screenshot',
     url: 'https://www.neutralise.net',
+    caseStudyUrl: '/projects/neutralize',
   },
   {
     title: 'Cloud Builder',

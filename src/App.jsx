@@ -5,6 +5,8 @@ import WellRounded from './pages/WellRounded';
 import PdfCombiner from './pages/tools/PdfCombiner';
 import ImageConverter from './pages/tools/ImageConverter';
 import BackgroundRemover from './pages/tools/BackgroundRemover';
+import CaseStudyPage from './pages/projects/CaseStudyPage';
+import { neutralize } from './data/caseStudies/neutralize';
 
 function App() {
   return (
@@ -14,6 +16,10 @@ function App() {
       <Route path="/tools/pdf-combiner" element={<PdfCombiner />} />
       <Route path="/tools/image-converter" element={<ImageConverter />} />
       <Route path="/tools/background-remover" element={<BackgroundRemover />} />
+      <Route
+        path="/projects/neutralize"
+        element={<CaseStudyPage data={neutralize} />}
+      />
     </Routes>
   );
 }
