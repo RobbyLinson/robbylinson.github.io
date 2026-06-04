@@ -5,7 +5,7 @@ export const neutralize = {
     name: 'Neutralize',
     tagline:
       'A Chrome extension that surfaces bias in the news articles you read, in real time.',
-    status: 'All Ireland Hackathon Finalist',
+    status: 'Second Place, Hack Ireland 2025',
     role: 'Team Lead',
     teamSize: '4',
     timeline: 'February 2025',

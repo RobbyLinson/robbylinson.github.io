@@ -1,15 +1,15 @@
 export const jobs = [
   {
-    title: 'Founding Engineer',
+    title: 'Technical Co-Founder',
     company: 'Zane',
-    location: 'Dublin, Ireland',
-    period: 'Aug 2025 – May 2026',
+    location: 'Remote',
+    period: 'Sep 2025 – Present',
     description:
-      'Created an MVP for a new startup. Focusing on using machine learning to match creators and brands with direct payouts based on performance.',
-    techStack: 'React, TailwindCSS, Vite, PostgreSQL, Express.js',
+      'Co-founding an ML-powered platform that matches creators and brands with direct performance-based payouts. Built the core similarity engine using vector embeddings and integrated Stripe for automated payouts. Driving key product and technical decisions and pitching to investors.',
+    techStack: 'React, TailwindCSS, Vite, PostgreSQL, Express.js, Supabase, Stripe, Railway, Netlify',
   },
   {
-    title: 'Full-time Data Science Intern',
+    title: 'Data Science Intern',
     company: 'Eaton',
     location: 'Dublin, Ireland',
     period: 'January 2025 – September 2025',

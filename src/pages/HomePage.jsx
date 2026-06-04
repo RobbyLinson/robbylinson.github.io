@@ -83,8 +83,8 @@ function HomePage() {
                 <li className="flex items-start">
                   <span className="text-primary text-xl mr-3">•</span>
                   <span>
-                    Computer Science student passionate about working hard and
-                    making an impact.
+                    Technical Co-Founder and recent Computer Science graduate
+                    with a drive for building impactful products.
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -97,8 +97,9 @@ function HomePage() {
                 <li className="flex items-start">
                   <span className="text-primary text-xl mr-3">•</span>
                   <span>
-                    Completing an M.Sc. in Computer Science by May 2026 and
-                    seeking full-time opportunities.
+                    Graduated with an M.Sc. in Computer Science from Trinity
+                    College Dublin (First Class Honors) and actively seeking
+                    full-time opportunities.
                   </span>
                 </li>
               </ul>
@@ -136,15 +137,13 @@ function HomePage() {
                 </div>
                 <div>
                   <p className="text-muted-foreground text-sm">Course:</p>
-                  <p>M.Sc. in Computer Science</p>
-                  <p>B.A. in Computer Science</p>
+                  <p>Integrated Master of Computer Science</p>
                 </div>
                 <div>
                   <p className="text-muted-foreground text-sm">
                     Average Grade:
                   </p>
-                  <p>First Class Honours</p>
-                  <p>4.0 Equivalent</p>
+                  <p>First Class Honors (4.0 Equivalent)</p>
                 </div>
                 <div>
                   <p className="text-muted-foreground text-sm">
@@ -152,7 +151,8 @@ function HomePage() {
                   </p>
                   <p>
                     Reinforcement Learning for Bus Headway Regularity
-                    Optimisation: A SUMO-Based Study of Dublin Bus
+                    Optimisation: A SUMO-Based Study of Mixed-Traffic Transit
+                    Systems
                   </p>
                 </div>
               </div>
