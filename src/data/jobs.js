@@ -3,9 +3,9 @@ export const jobs = [
     title: 'Founding Engineer',
     company: 'Zane',
     location: 'Dublin, Ireland',
-    period: 'Aug 2025 – Current',
+    period: 'Aug 2025 – May 2026',
     description:
-      'Working part-time on creating an MVP for a new startup. Focusing on usability and rapid development.',
+      'Created an MVP for a new startup. Focusing on using machine learning to match creators and brands with direct payouts based on performance.',
     techStack: 'React, TailwindCSS, Vite, PostgreSQL, Express.js',
   },
   {
@@ -15,7 +15,7 @@ export const jobs = [
     period: 'January 2025 – September 2025',
     description:
       'Developed and tested machine learning models for industrial applications. Presented results to stakeholders for project validation. Created proprietary data visualization tools.',
-    techStack: 'Python, TensorFlow, Pandas',
+    techStack: 'Python, TensorFlow, Pandas, TypeScript',
   },
   {
     title: 'Contracted Research Assistant',

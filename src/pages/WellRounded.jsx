@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardHeader, CardTitle } from '../components/ui/card';
-import Watching from '../assets/ShrinkingPoster.jpg';
-import Reading from '../assets/TheLostMetal.jpg';
+import Watching from '../assets/SpiderNoir.webp';
+import Reading from '../assets/WindAndTruth.jpg';
 import Listening from '../assets/TheGreatDivide.png';
 
 function WellRounded() {
@@ -46,7 +46,7 @@ function WellRounded() {
               <p className="text-xs text-primary uppercase tracking-widest mb-1">
                 Currently Reading
               </p>
-              <h3 className="text-lg font-semibold">The Lost Metal</h3>
+              <h3 className="text-lg font-semibold">Wind and Truth</h3>
               <p className="text-sm text-muted-foreground">Brandon Sanderson</p>
               <p className="text-muted-foreground text-sm mt-1"></p>
             </div>
@@ -83,8 +83,8 @@ function WellRounded() {
               <p className="text-xs text-primary uppercase tracking-widest mb-1">
                 Recently Watched
               </p>
-              <h3 className="text-lg font-semibold">Shrinking</h3>
-              <p className="text-muted-foreground text-sm mt-1">Apple TV</p>
+              <h3 className="text-lg font-semibold">Spider-Noir</h3>
+              <p className="text-muted-foreground text-sm mt-1">Prime Video</p>
             </div>
           </Card>
         </div>
