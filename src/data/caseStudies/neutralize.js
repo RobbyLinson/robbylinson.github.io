@@ -17,7 +17,6 @@ export const neutralize = {
       'Web Scraping',
     ],
     heroImage: NeutralizeImg,
-    liveUrl: 'https://www.neutralise.net',
     repoUrl: null, // fill in when public
   },
 
