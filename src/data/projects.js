@@ -3,8 +3,19 @@ import CloudBuilder from '../assets/cloudbuilder.png';
 import Robby from '../assets/Robby.png';
 import TrinityWall from '../assets/Trinity Climbing Wall.jpg';
 import Rolodex from '../assets/rolodex-logo.png';
+import CheckEmailLight from '../assets/check-email-light.svg';
 
 export const projects = [
+  {
+    title: 'Check Email Light',
+    role: 'Solo Developer',
+    description:
+      'An AI-powered inbox digest that scores your Gmail for urgency and delivers a prioritised catch-up summary every morning',
+    techStack:
+      'Python, LangChain, Claude, HuggingFace Transformers, Gmail API, Resend, Winotify',
+    image: CheckEmailLight,
+    alt: 'Check Email Light',
+  },
   {
     title: 'Rolodex',
     role: 'Backend Developer',
