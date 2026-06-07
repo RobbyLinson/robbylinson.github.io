@@ -1,0 +1,35 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CheckEmailLight icon">
+  <defs>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- GREEN: calm (top) -->
+  <g transform="translate(76,23)">
+    <circle cx="44" cy="35" r="46" fill="#16a34a" opacity="0.15"/>
+    <g filter="url(#glow)">
+      <rect x="6" y="8" width="76" height="54" rx="9" fill="none" stroke="#16a34a" stroke-width="6"/>
+      <path d="M9 14 L44 40 L79 14" fill="none" stroke="#16a34a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- AMBER: busy (middle) -->
+  <g transform="translate(76,85)">
+    <circle cx="44" cy="35" r="46" fill="#f59e0b" opacity="0.15"/>
+    <g filter="url(#glow)">
+      <rect x="6" y="8" width="76" height="54" rx="9" fill="none" stroke="#f59e0b" stroke-width="6"/>
+      <path d="M9 14 L44 40 L79 14" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- RED: on fire (bottom) -->
+  <g transform="translate(76,147)">
+    <circle cx="44" cy="35" r="46" fill="#dc2626" opacity="0.15"/>
+    <g filter="url(#glow)">
+      <rect x="6" y="8" width="76" height="54" rx="9" fill="none" stroke="#dc2626" stroke-width="6"/>
+      <path d="M9 14 L44 40 L79 14" fill="none" stroke="#dc2626" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

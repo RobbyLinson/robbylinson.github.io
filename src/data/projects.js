@@ -3,7 +3,7 @@ import CloudBuilder from '../assets/cloudbuilder.png';
 import Robby from '../assets/Robby.png';
 import TrinityWall from '../assets/Trinity Climbing Wall.jpg';
 import Rolodex from '../assets/rolodex-logo.png';
-import CheckEmailLight from '../assets/checkemaillight-logo.svg';
+import CheckEmailLight from '../assets/checkemaillight-icon-square.svg';
 
 export const projects = [
   {
