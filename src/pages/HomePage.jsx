@@ -15,6 +15,7 @@ import {
   FaFilePdf,
   FaImage,
   FaEraser,
+  FaQrcode,
 } from 'react-icons/fa';
 import Robby from '../assets/Robby.png';
 import TCD from '../assets/TCD-Logo.png';
@@ -193,7 +194,7 @@ function HomePage() {
             </p>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               <button
                 onClick={() => navigate('/tools/pdf-combiner')}
                 className="group flex flex-col items-center gap-3 p-6 rounded-lg border border-border hover:border-primary/50 hover:bg-accent/50 transition-all text-left"
@@ -227,6 +228,18 @@ function HomePage() {
                   <p className="font-semibold text-lg">Background Remover</p>
                   <p className="text-sm text-muted-foreground">
                     Remove backgrounds with AI
+                  </p>
+                </div>
+              </button>
+              <button
+                onClick={() => navigate('/tools/qr-generator')}
+                className="group flex flex-col items-center gap-3 p-6 rounded-lg border border-border hover:border-primary/50 hover:bg-accent/50 transition-all text-left"
+              >
+                <FaQrcode className="text-4xl text-primary group-hover:scale-110 transition-transform" />
+                <div className="text-center">
+                  <p className="font-semibold text-lg">QR Generator</p>
+                  <p className="text-sm text-muted-foreground">
+                    Generate QR codes for any URL or text
                   </p>
                 </div>
               </button>
