@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from '../../components/ui/card';
-import { FaQrcode, FaDownload } from 'react-icons/fa';
+import { FaDownload } from 'react-icons/fa';
 
 const SIZES = [128, 256, 512, 1024];
 const EC_LEVELS = [
